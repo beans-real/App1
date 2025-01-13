@@ -1,18 +1,37 @@
 
+@keyframes rotate{
+    from{transform:rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+@keyframes moveIt{
+    from {background-position: top left;}
+    to {background-position: bottom right;}
+    
+}
 html, body {
     background-image: url("Media/background.png");
     background-size: 64px 64px;
     background-position: left top;
+    animation: moveIt 15s alternate infinite;
     background-repeat: repeat;
     height: 100%;
     margin: 0;
     padding: 0;
 }
+.outer {
+    outline: 2px solid #ccc;
+    border: 1px solid #999;
+    background-color:#999;
+    background-size: cover;
+    background-clip: border-box;
+    padding-left: 256px;
+    padding-right: 256px;
+    margin: 0;
+}
 .primary {
     background-color: rgba(232,220,202,0.95);
     color:aliceblue;
-    width:80%;
-    height:90%;
     padding-left: 256px;
     padding-right: 256px;
 }
@@ -20,6 +39,7 @@ html, body {
 h1 {
     background-color: rgba(255, 202, 123, 0.856);
     color:rgb(196, 227, 255);
+    justify-content: center;
     padding-left: 256px;
     padding-right: 256px;
 }
