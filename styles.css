@@ -23,9 +23,6 @@ html, body {
   height: 100%;
   background-image: url("Media/background.png");
   background-size: 64px 64px;
-  background-position: left top;
-  background-repeat: repeat;
-  animation: moveIt 100s linear alternate infinite;
 }
 
 .pageContainer {
@@ -79,7 +76,7 @@ html, body {
 .centerContainer .centerContent {
   background-color: rgba(232, 220, 202, 0.95);
   color: aliceblue;
-  padding: 0 256px;
+  padding: 10px;
 }
 
 .stickyHeader {
