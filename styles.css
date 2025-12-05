@@ -20,13 +20,13 @@
 
 @font-face {
   font-family: "OceanCustomFont";
-  src: url("fonts/OceantypepersonaluseBoldita-PKEAE.otf") format("opentype");
+  src: url("fonts/OceantypepersonaluseBoldita-PKEAE.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "SaltWaterCustomFont";
-  src: url("fonts/SaltwatertypeitalicpersonalI-mLegG.otf") format("opentype");
+  src: url("fonts/SaltwatertypeitalicpersonalI-mLegG.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
