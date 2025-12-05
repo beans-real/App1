@@ -134,6 +134,12 @@ html, body {
           backdrop-filter: blur(2px);
   margin-left: 0;
   justify-content: center;
+  flex-direction: row;
+}
+.leftContainer .navContainer a,
+.rightContainer .navContainer a {
+  text-decoration: none;
+  color: inherit;
 }
 .leftContainer .navContainer .navHeader,
 .rightContainer .navContainer .navHeader {
@@ -147,6 +153,27 @@ html, body {
 .leftContainer .navContainer .navHeader p,
 .rightContainer .navContainer .navHeader p {
   margin: 0;
+}
+.leftContainer .navContainer .navSplitItemContainer,
+.rightContainer .navContainer .navSplitItemContainer {
+  font-family: WilkerCustomFont, sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-style: italic;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 170px;
+  height: 50px;
+  flex-direction: row;
+}
+.leftContainer .navContainer .navSplitItemContainer .navSplitItemImage,
+.rightContainer .navContainer .navSplitItemContainer .navSplitItemImage {
+  width: 30px;
+  height: 30px;
+}
+.leftContainer .navContainer .navSplitItemContainer .navSplitItemText,
+.rightContainer .navContainer .navSplitItemContainer .navSplitItemText {
+  margin-left: 5px;
 }
 .leftContainer .navContainer .navItem,
 .rightContainer .navContainer .navItem {
