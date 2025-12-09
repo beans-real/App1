@@ -48,7 +48,15 @@ html, body {
   height: 100%;
   background-image: url("Media/Cropped1.gif");
   background-size: cover;
-  display: block;
+  background-attachment: fixed;
+  
+  /* Hide scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
 }
 
 .wrapper{
@@ -78,15 +86,14 @@ html, body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  height: 100%;
+  align-items: flex-start;
+  min-height: 100vh;
   padding: 0;
   padding-top: 5px;
   margin: 0;
   backdrop-filter: blur(5px);
   border-bottom-left-radius: 2%;
   border-bottom-right-radius: 2%;
-  overflow: hidden;
 }
 
 .stickyHeaderWrapper {
@@ -149,11 +156,14 @@ html, body {
 // Left & right sidebars
 .leftContainer,
 .rightContainer {
+  position: sticky;
+  top: 0;
   width: 20%;
-  height: 100%;
+  height: 100vh;
   flex-shrink: 0;
   padding-left: 10px;
   padding-right: 10px;
+  overflow: auto;
 
   .navContainer {
     display: flex;
@@ -201,6 +211,7 @@ html, body {
       text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
       font-size: 1.8rem;
       font-style: italic;
+      text-align: center;
       display: flex;
       background-image: url("Media/displaytabgreen.png");
       width: 170px;
@@ -211,6 +222,7 @@ html, body {
       a{
         color:inherit;
         text-decoration: none;
+        text-align: center;
       }
     }
   }
@@ -226,13 +238,50 @@ html, body {
   width: 100%;
   height: 100%;
   margin: 0 0px;
+  margin-left: 20px;
+  margin-right: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   // background-image: linear-gradient(to right, #E4C1F9, #A9DEF9, #E4C1F9);
 
-  .centerContent {
-    background-color: rgba(232, 220, 202, 0.95);
-    color: aliceblue;
-    padding: 10px;
+  .centerRowContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .centerColumnContainer{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .displayTab{
+        width: 95%;
+        height: 95%;
+        border: #A9DEF9 solid 4px;
+        border-radius: 2%;
+        box-shadow: 0 0 15px #A9DEF9;
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-family: WasserCustomFont, sans-serif;
+        font-size: 2rem;
+        color: rgb(255, 255, 255);
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        vertical-align: top;
+        p{
+          font-size: medium;
+          margin: 0 10px;
+        }
+      }
+    }
   }
 }
