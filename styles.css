@@ -19,14 +19,20 @@
 }
 
 @font-face {
-  font-family: "OceanCustomFont";
-  src: url("fonts/OceantypepersonaluseBoldita-PKEAE.woff2") format("woff2");
+  font-family: "WasserCustomFont";
+  src: url("fonts/Wasser-qBV.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "SaltWaterCustomFont";
-  src: url("fonts/SaltwatertypeitalicpersonalI-mLegG.woff2") format("woff2");
+  font-family: "OverwaveCustomFont";
+  src: url("fonts/Overwave-AL6AL.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CSJuicyCustomFont";
+  src: url("fonts/CsJuicy-51XYa.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -94,9 +100,10 @@ html, body {
 }
 
 .stickyHeader {
-  font-family: OceanCustomFont, sans-serif;
+  font-family: OverwaveCustomFont, sans-serif;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 1rem;
+  font-size: 1.7rem;
+  text-align: center;
   background-size: 120px 120px;
   background-position: left top;
   background-repeat: repeat;
@@ -117,6 +124,10 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1%;
+}
+.stickyHeader .headerContent h2 {
+  margin: 0;
 }
 
 .leftContainer,
@@ -143,8 +154,7 @@ html, body {
 }
 .leftContainer .navContainer .navHeader,
 .rightContainer .navContainer .navHeader {
-  font-family: SaltWaterCustomFont, sans-serif;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: CSJuicyCustomFont, sans-serif;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
@@ -153,6 +163,9 @@ html, body {
 .leftContainer .navContainer .navHeader p,
 .rightContainer .navContainer .navHeader p {
   margin: 0;
+  color: rgb(255, 255, 255);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-weight: 600;
 }
 .leftContainer .navContainer .navSplitItemContainer,
 .rightContainer .navContainer .navSplitItemContainer {
