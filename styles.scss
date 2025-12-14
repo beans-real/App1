@@ -228,16 +228,19 @@ html, body {
   }
 }
 .leftContainer {
-  // background-color: (#D0F4DE);
+  // background-color: (#D0F4DE);.
+  border-right: 5px solid rgba(0, 0, 0, 0.08);
 }
 .rightContainer{
   // background-color: (#FCF6BD);
+  border-left: 5px solid rgba(0, 0, 0, 0.08);
 }
 // Center section
 .centerContainer {
   flex: 1;
+  max-width: 550px;
   height: 100%;
-  margin: 0 20px;
+  margin: 0;
   display: flex;
   flex-direction: row;
   // background-image: linear-gradient(to right, #E4C1F9, #A9DEF9, #E4C1F9);
